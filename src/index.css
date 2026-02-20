@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Bebas+Neue&display=swap');
+
+
+
+body {
+  background-image: url("./assets/img/backgroundmain.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000; 
+}
+
+
+.navbar-bg-image {
+    
+    background-image: url("./assets/img/background2.jpg");
+    background-size: cover ;
+    background-position: center;
+    background-repeat: repeat; 
+    min-height: 100px;
+}
+
+.title-depth {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 
+                 -1px -1px 0px rgba(255, 255, 255, 0.1);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+                 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.title-starwars {
+    color: #FFE81F; /* El amarillo clásico de Star Wars */
+    text-shadow: 3px 3px 0px #000, 
+                 -1px -1px 0px #000, 
+                 1px -1px 0px #000, 
+                 -1px 1px 0px #000, 
+                 1px 1px 0px #000;
+}
+
+.title-custom:hover {
+   text-shadow: 0 0 10px #FFE81F, 0 0 20px #FFE81F;
+   transition: 0.1s;
+   cursor: default;
+}

@@ -9,6 +9,9 @@ import { Layout } from "./pages/Layout";
 import { Home } from "./pages/Home";
 import { Single } from "./pages/Single";
 import { Demo } from "./pages/Demo";
+import { Nave } from "./pages/Nave";
+import { Planeta } from "./pages/Planeta";
+import { Personaje } from "./pages/Personaje";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
@@ -23,6 +26,11 @@ export const router = createBrowserRouter(
 
         {/* Nested Routes: Defines sub-routes within the BaseHome component. */}
         <Route path= "/" element={<Home />} />
+
+        <Route path= "/nave/:naveId" element={<Nave />} />
+        <Route path= "/planeta/:planetaId" element={<Planeta />} />
+         <Route path= "/personaje/:personajeId" element={<Personaje />} />
+
         <Route path="/single/:theId" element={ <Single />} />  {/* Dynamic route for single items */}
         <Route path="/demo" element={<Demo />} />
       </Route>
